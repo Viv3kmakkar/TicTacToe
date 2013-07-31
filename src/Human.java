@@ -28,7 +28,7 @@ public class Human extends Player
                 cellIndex = playerInput.nextInt();
 
                 // sets row and cell indexes;
-                // example: cell = 5, so rowIndex = 1 and cellIndex = 1;
+                // example: cell = 5, so rowIndex = 1 and columnIndex = 1;
                 setIndexes(cellIndex);
             }
 
