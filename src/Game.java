@@ -31,20 +31,21 @@ public class Game
 
     public void run()
     {
-        Game game = new Game();
-        Game.printGreetings();
-        game.field.drawGameField();
+        printGreetings();
+        
+        field.drawGameField();
 
         // rand start index (first player will be human or computer)
+        // i = 0 or 1
         int i = (int) (Math.random() * 2);
 
-        while (!game.isEndOfGame())
+        while (!isEndOfGame())
         {
-            game.nextMove(i++);
-            game.field.drawGameField();
+            nextMove(i++);
+            field.drawGameField();
         }
 
-        game.field.drawGameField();
+        field.drawGameField();
     }
 
     public static void setNewSign(char sing, int row, int column)
